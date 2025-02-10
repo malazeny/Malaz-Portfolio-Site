@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: white;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #E48BA3;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.intro h1 {
+    font-size: 50px;
+    color: #E48BA3;
+    font-weight: bold;
+}
+
+.intro h2 {
+    font-size: 35px;
+    color: #E48BA3;
+}
+
+.intro {
+    position: relative;
+    z-index: 2;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background: #F0E2F5;
+    bottom: 0;
+    left: 0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: 1;
+}
+
+nav {
+    position: relative;
+    z-index: 1000; 
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #E48BA3;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid #E48BA3;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: #E48BA3;
+    color: white;
+}
+
+* {
+    position: relative;
+}
